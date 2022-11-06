@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Cipher</div>
+        <nav>
+            <div class="navlink">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+     
+            <div class="download-link">
+            <a href="./assets/Resume.pdf" download="Muhammad Fahimul Huq_Resume">Download cv</a>
+        </div>
+        
+        </nav>
+    </header>
+    <img class="background" src="./assets/Group 3.svg" alt="bg">
+    <section class="Home">
+    
+      <div class="myname-container">
+        <h1>Myself</h1>
+        <h1>Muhammad Fahimul Huq.</h1>
+        <p>Iam a solo developer, I create appealing & robust application for your business needs.</p>
+        <h2>UI/UX DESINGER & FULL STACK DEVELOPER</h2>
+        <div class="hire-me">
+            <a href="#">
+                Hire Me</a>
+        </div>
+        <div class="social-container">
+            <a href=""><img src="./assets/codicon_github-alt.svg" alt=""></a>
+            <a href=""><img src="./assets/bxl_linkedin.svg" alt=""></a>
+            <a href=""><img src="./assets/bx_paper-plane.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="project-client-container">
+        <div class="card">
+            <h3>PROJECT COMPLETED</h3>
+            <div class="project-card">
+                <h2>15+</h2>
+            </div>
+        </div>
+        <div class="card">
+        <h3>TOTAL CLIENT HANDLED</h3>
+        <div class="client-card">
+            <h2>7+</h2>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section  id="skills">
+        <div class="skills-container">
+            <div class="language-card front-end-card card-1">
+                <p>React</p>
+                <p>Redux</p>
+                <p>Sass</p>
+            </div>
+            <div class="language-card card-2">
+               <p>FRONT-END</p> 
+            </div>
+            <div class="language-card card-3">
+                <p>Node.js</p>
+                <p>Express.js</p>
+                <p>laravel</p>
+            </div>
+            <div class="language-card back-end-card card-4">
+               <p>BACK-END</p> 
+            </div>
+            <div class="language-card design-n-animation-card card-5">
+                <p>FIGMA</p>
+                <p>Adobe xD</p>
+                <p>GSAP</p>
+            </div>
+            <div class="language-card card-6">
+              <p>DESIGN & ANIMATION</p>  
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-container main-gallery js-flickity"
+        data-flickity-options='{ "contain": true,"freeScroll":true,"prevNextButtons" : false, "pageDots": false,"wrapAround":true,"autoPlay": 2500}'
+        >
+            <div class="project-card gallery-cell">
+                <div class="inner">
+                    <a href="#">Abc Store</a>
+                    <p>An online platform for personal care product.</p>
+                </div>
+            </div>
+            <div class="project-card gallery-cell">
+                <div class="inner">
+                    <a href="#">It Is What It is</a>
+                    <p>A Landing page for a digital agency company</p>
+                </div>
+            </div>
+            <div class="project-card gallery-cell">
+                <div class="inner">
+                    <a href="#">Weather Api</a>
+                    <p>Restful api that uses web scraping techinique to fetch data from Accuweather.com</p>
+                </div>
+            </div>
+            <div class="project-card gallery-cell">
+                <div class="inner">
+                    <a href="#">Spm</a>
+                    <p>A Student Performance monitoring app</p>
+                </div>
+            </div>
+            <div class="project-card gallery-cell">
+                <div class="inner">
+                    <a href="#">Baker's Lane</a>
+                    <p>A Landing Page for a baking shop.</p>
+                </div>
+            </div>
+        </div>     
+    <div class="work-container">
+        <a href="">Let's get to work?</a>
+    </div>
+    
+</section>
+<section class="contact" id="contact">
+        
+    <div class="header-title">
+        <div class="content">
+            <h1>Contact</h1>
+            <p>Collabe with my current project or wants to hire me just send message. </p>
+            <form action="https://formsubmit.co/243dea447fbc3955ed8fdcdebb93db70" method="POST" />
+                <label for="name" >Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+               
+                <label for="Email">Email</label>
+                <input type="text" id="Email" name="email" placeholder="JohnDoe@example.com" required>
+                <label for="message">Write your message</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>  
+     
+         
+      
+    
+    </div>
+   
+</section>
+<footer>
+ <div class="container">
+    <div class="logo">Cipher</div>
+    <div class="content">
+        <div class="navlink">
+            <div class="nav">
+                <a href="#projects">Project</a>
+                <a href="#skills">Skill</a>
+                <a href="#contact">Contact</a>    
+            </div>
+          <div class="privacy-copyright">
+            <a href="#">Privacy -- Terms</a>
+            Copyright all right reserved | Cipher
+          </div>
+
+        </div>
+       
+</div>
+ </div>
+       
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/CSSRulePlugin.min.js" integrity="sha512-2+BGFUqT8mzxE2ifxQK7kcEhOeHaO5EOrUgRIUJ9+HoIw8zQHI+HvnVrgGjwW0qL5dpGv8ao2oZlBS7IvvCuhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+
+// const lenis = new Lenis({
+//     duration: 1.2,
+//     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+//     smooth: true,  
+// })
+// lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+//   console.log({ scroll, limit, velocity, direction, progress })
+// })
+//   function raf(time) {
+//       lenis.raf(time)
+//       requestAnimationFrame(raf)
+//   }
+
+//   requestAnimationFrame(raf)
+
+
+let t1 = gsap.timeline({default: {ease:'power4.inOut',duration:2}});
+t1.from('.logo',{y:500,scale:2,duration:1.2})
+t1.from('nav',{opacity:0,y:-50,duration:1.2})
+t1.from('.myname-container h1',{opacity:0,y:-50,duration:1.2},"-=2")
+t1.from('.myname-container p',{opacity:0,x:-50,duration:1.2},"-=2")
+t1.from('.myname-container h2',{opacity:0,x:50,duration:1.2},"-=2")
+t1.from('.hire-me a',{opacity:0,y:50,duration:1.2})
+t1.from('.social-container',{opacity:0,scale:0.2,duration:1.2},"-=1")
+
+let sT1 = gsap.timeline({
+scrollTrigger:{
+    trigger:'.project-client-container',
+    start:'center bottom',
+    scrub:1
+}
+})
+sT1.from('.card',{ opacity:0,x:-100})
+
+gsap.registerPlugin(CSSRulePlugin);
+let skillsTitle= CSSRulePlugin.getRule(".skills-container:after")
+
+let sT2 = gsap.timeline({
+scrollTrigger:{
+    trigger:'#skills',
+    start:'top bottom',
+    end:'+=1300',
+    scrub:1 ,
+   
+}
+})
+// sT2.from(skillsTitle,{x:100})
+sT2.from('.card-1',{opacity:0, x: -100})   
+sT2.from('.card-4',{opacity:0, x: 100})
+sT2.from('.card-5',{opacity:0, x: -100})
+
+let sT3 = gsap.timeline({
+scrollTrigger:{
+    trigger:'.work-container',
+    start:'bottom bottom',
+    scrub:1 ,
+   
+}
+})
+sT3.from('.work-container a',{opacity:0.1})
+</script>
+
+</html>
