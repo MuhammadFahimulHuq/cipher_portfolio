@@ -1,17 +1,17 @@
 let skillsTitle= CSSRulePlugin.getRule(".skills-container:after")
 
-const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smooth: true,  
-})
+// const lenis = new Lenis({
+//     duration: 1.2,
+//     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+//     smooth: true,  
+// })
 
-  function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-  }
+//   function raf(time) {
+//       lenis.raf(time)
+//       requestAnimationFrame(raf)
+//   }
 
-  requestAnimationFrame(raf)
+//   requestAnimationFrame(raf)
 
 let t1 = gsap.timeline({default: {ease:'power4.inOut',duration:2}});
 t1.from('.logo',{y:500,scale:10,duration:1.5})
